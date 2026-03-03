@@ -2,7 +2,7 @@
 
 LFM 펄스 압축 매칭 필터 Verilog 구현 (4MAC 시분할 구조)
 
-노션 링크 : 
+노션 링크 : https://www.notion.so/LFM-4MAC-31857629ddf180389927e55163f707fd?source=copy_link
 
 # 개요
 레이더 신호처리 기법인 LFM 펄스 압축을 Verilog에서 구현
