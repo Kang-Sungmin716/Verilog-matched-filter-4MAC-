@@ -65,7 +65,7 @@ module tb_matched_4MAC_600;
         repeat (50) 
         @(posedge clk); 
         $display("total output : %0d", out_count); 
-   $finish; 
+    $finish; 
     end
         
     
