@@ -3,7 +3,7 @@
 module tb_matched_4MAC_600;
 
     parameter N = 200;
-    parameter WINDOW = 600;
+    parameter length = 600;
     
     reg clk;
     reg rst;
@@ -14,8 +14,8 @@ module tb_matched_4MAC_600;
     wire signed [15:0] yout_Q;
     wire valid;
     
-    reg signed [15:0] input_I [0:WINDOW-1];
-    reg signed [15:0] input_Q [0:WINDOW-1];
+    reg signed [15:0] input_I [0:length-1];
+    reg signed [15:0] input_Q [0:length-1];
     
     
     integer i;
@@ -49,7 +49,7 @@ module tb_matched_4MAC_600;
         repeat (10) @(posedge clk);
         rst = 0;
         
-        for (i = 0; i < WINDOW; i = i+1) begin
+        for (i = 0; i < length; i = i+1) begin
             @(posedge clk);
             sample = 1;
             xin_I  = input_I[i];
