@@ -52,7 +52,7 @@ mainlobe_width = right_idx - left_idx + 1;
 %% PSLR, ISLR
 
 PSLR_dB = 20*log10(max(mag_signal(side_region)) / peak_val); % 20log(peak_sidelobe / peak_mainlobe)
-ISLR_dB = 10*log10(sum(mag_signal(side_region)) / sum(mag2_signal(main_region))); % 10log(energy_sidelobe / energy_mainlobe)
+ISLR_dB = 10*log10(sum(mag2_signal(side_region)) / sum(mag2_signal(main_region))); % 10log(energy_sidelobe / energy_mainlobe)
 
 
 %% SNR 시뮬레이션 (몬테-카를로)
