@@ -92,4 +92,4 @@ fprintf("시뮬레이션 SNR out = %.2f dB\n", SNR_out_simul);
 fprintf("시뮬레이션 SNR gain = %.2f dB\n", SNR_gain_simul);
 
 fprintf("이론값 SNR out = %.2f dB\n", SNR_out_theory);
-fprintf("이론값 SNR gain = %.2f dB\n", SNR_gain_theory);
+fprintf("이론값 SNR gain = %.2f dB", SNR_gain_theory);
